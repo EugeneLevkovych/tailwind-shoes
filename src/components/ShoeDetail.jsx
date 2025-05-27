@@ -1,4 +1,6 @@
+import { QTY,SIZES } from "../../constant"
 import nike1 from "../assets/n1-min.png"
+import Select from "./Select"
 
 export default function ShoeDetail() {
     return (
@@ -20,6 +22,8 @@ export default function ShoeDetail() {
             <div className="text-3xl font-extrabold md:text-6xl"> 
                 100$
             </div>
+            <Select title={"QTY"} options={QTY} />
+            <Select title={"SIZE"} options={SIZES} />
             <div className="space-x-10">
             <button className="h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">
                 Add to bag

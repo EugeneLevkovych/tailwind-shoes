@@ -8,7 +8,7 @@ export default function Select({title, options}) {
                 {options.map(
                    option => <option value={option} key={option}>{option}</option>)}
             </select>
-            <div className="flex-center absolute inset-y-0 right-0 pr-3">
+            <div className="flex-center pointer-events-none absolute inset-y-0 right-0 pr-3">
                 <IoIosArrowDown />
             </div>
         </div>

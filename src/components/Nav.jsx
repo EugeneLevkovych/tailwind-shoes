@@ -9,15 +9,18 @@ export default function Nav({ onClickShoppingButton }) {
 const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
  return (
- <nav className="relative z-10 flex flex-wrap justify-between">
+ <nav className="relative z-10 flex flex-wrap justify-between items-center">
    <a href="#">
-     <NikeLogo className="h-20 w-20" />
+     <NikeLogo className="h-20 w-20 dark:fill-white" />
    </a>
-   <button onClick={()=>setIsMobileMenuShown(!isMobileMenuShown)} className="lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200">
+   <button 
+   onClick={()=>setIsMobileMenuShown(!isMobileMenuShown)} 
+   className="h-[45px] lg:hidden rounded-lg p-2 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700"
+   >
     <RxHamburgerMenu size={25} />
    </button>
    <div className={`${!isMobileMenuShown && "hidden"} w-full lg:block lg:w-auto`}>
-    <ul className="lg:space-x-8  flex flex-col rounded-lg border border-gray-100 lg:border-none bg-gray-50 lg:bg-transparent p-4 text-lg lg:flex-row">
+    <ul className="lg:space-x-8  flex flex-col rounded-lg border border-gray-100 lg:border-none bg-gray-50 lg:bg-transparent p-4 text-lg lg:flex-row lg:dark:text-white">
         {ROUTES.map((route, i) => {
            return (<li className={`cursor-pointer rounded px-3 py-2 lg:hover:bg-transparent lg:hover:text-blue-500 ${
             i===0

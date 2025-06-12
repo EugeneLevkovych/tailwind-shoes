@@ -27,7 +27,7 @@ export default function ShoeDetail() {
               <Select title={"SIZE"} options={SIZES} />
             </div>
             <div className="space-x-10">
-            <button className="btn-press-anim h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">
+            <button className="btn-press-anim h-14 w-44 bg-black dark:bg-white dark:text-black text-white hover:bg-gray-900 active:bg-gray-700">
                 Add to bag
             </button>
             <a href="#" className="text-lg font-bold underline underline-offset-4">

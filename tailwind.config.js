@@ -12,7 +12,7 @@ export default {
       night: {
         DEFAULT: "#0D1120", 
         50: "#171E2C",
-        500: "#0D1120"
+        500: "#0D1120",
       }
       },
         keyframes: {

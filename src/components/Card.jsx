@@ -1,6 +1,6 @@
-export default function Card({ item }) {
+export default function Card({ item, onClick }) {
     return (
-    <div className={`${item.className} relative max-w-xl cursor-pointer transform transition hover:scale-105`}>
+    <div onClick={()=>onClick(item)} className={`${item.className} relative max-w-xl cursor-pointer transform transition hover:scale-105`}>
         <div className="p-9">
            <div className="text-2xl font-bold">{item.title}</div>
            <div className="mt-10 font-semibold underline underline-offset-4">SHOP NOW +</div>
